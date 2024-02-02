@@ -1,0 +1,11 @@
+{
+  "name": "your-function-app",
+  "version": "1.0.0",
+  "description": "Azure Functions App",
+  "main": "index.js",
+  "dependencies": {
+    "mysql": "^2.18.1"
+    // Add other dependencies if needed
+  }
+}
+
