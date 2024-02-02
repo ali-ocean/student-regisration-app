@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Computing and DevOps Course</title>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 20px;
+        }
+
+        h1, h2 {
+            color: #0078d4;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        form {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #0078d4;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #005a9e;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Cloud Computing and DevOps Course</h1>
+    <p>This course covers various aspects of cloud computing and DevOps practices.</p>
+    
+    <!-- Login Page -->
+    <h2>Login</h2>
+    <form action="/api/login" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+        <input type="submit" value="Login">
+    </form>
+
+    <!-- Signup Page -->
+    <h2>Signup</h2>
+    <form action="/api/signup" method="post">
+        <label for="newUsername">Username:</label>
+        <input type="text" id="newUsername" name="newUsername" required>
+        <br>
+        <label for="newPassword">Password:</label>
+        <input type="password" id="newPassword" name="newPassword" required>
+        <br>
+        <input type="submit" value="Signup">
+    </form>
+
+    <!-- Survey Form -->
+    <h2>Course Survey</h2>
+    <form action="/api/survey" method="post">
+        <label for="feedback">Please provide your feedback:</label>
+        <textarea id="feedback" name="feedback" required></textarea>
+        <br>
+        <input type="submit" value="Submit Feedback">
+    </form>
+</body>
+</html>
+
